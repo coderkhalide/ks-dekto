@@ -1,0 +1,120 @@
+.message__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background: #ffffff;
+    justify-content: space-between;
+    border: 1px solid #f0f0f0;
+    margin: 15px 0px;
+    box-shadow: 0 10px 15px -14px #e6e6e6;
+}
+.message__header {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.message__header h4 {
+    padding-left: 10px;
+    font-size: 0.9em;
+    color: #585858;
+}
+.message__body {
+    flex: 1;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.message__body::-webkit-scrollbar {
+    width: 5px;
+}
+.message__body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+.message__body::-webkit-scrollbar-thumb {
+    background-color: rgb(221, 221, 221);
+}
+.message__form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post__comment_btn {
+    flex: 0.1 1;
+    color: #f50057 !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+}
+.message__input {
+    flex: 0.9 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+}
+.msg {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.msg b {
+    font-size: 14px;
+    color: #f70057;
+    font-weight: 600;
+}
+.msg__text {
+    background: #ddd;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.sender .message__avatar {
+    order: 2;
+}
+.sender .msg__text {
+    background: #0095f6;
+    color: #fff;
+}
+.reciver .msg__text {
+    background: #f5f5f5;
+    color: #000;
+    -ms-word-break: break-word;
+    word-break: break-word;
+}
+.sender .message__avatar {order: 2;}
+
+.message__avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+}
+.message__form {
+    border-top: 1px solid #f0f0f0;
+}
+.message__avatar {
+    width: 30px !important;
+    font-size: 13px !important;;
+    height: 30px !important;;
+}
+.sender {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.live_chat_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.live_chat_top h3 {
+    color: #f5007d;
+}
+.live_chat_top button {
+    color: #f50057;
+    font-weight: 600;
+    text-transform: capitalize;
+}

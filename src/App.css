@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+/* App */
+.App{
+    background: #FAFAFA;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Posts */
+.app_posts{
+    padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__sidebar {
+    width: 100%;
+    max-width: 40%;
+    padding: 20px ;
 }
-
-.App-link {
-  color: #61dafb;
+.app_posts {
+    padding: 20px;
+    width: 60%;
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
+.app_posts::-webkit-scrollbar {
+    display: none;
+}
+/* App header */
+.app__header {
+    background: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.app__header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.app_headerImage{
+    object-fit: cover;
+}
+.app__avarter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+.app__avarter button {
+    color: #f50057;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 8px;
+}
+.app__login_container button {
+    color: #f50057;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.app__modal_form button {
+    color: #f50057;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* Modal */
+.app__modal {
+    max-width: 400px;
+    border: none;
+    outline: none;
+    background: #fff;
+    min-height: 250px;
+    margin: 20px auto;
+    padding: 31px;
+    width: 80vw;
+    border-radius: 7px;
+}
+.app__modal_form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.app__modal_input {
+    width: 100%;
+    margin: 16px 0px;
+}
+.app__sidebar_img {
+    max-width: 100%;
+    object-fit: contain;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.app__chat_icon {
+    display: none;
+}
+.closeBtn {
+    display: none;
+}
+@media (max-width: 768px){
+    .app__sidebar {
+        max-width: 100%;
+        overflow: hidden;
+        height: 0px;
+    }
+    .message{
+        display: none;
+    }
+    .app_posts {
+        width: 100%;
+    }
+    .app__mobile_chat {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: #fff;
+        height: auto;
+    }
+    .app__mobile_chat .message{
+        display: block;
+    }
+    .app__chat_icon {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        display: block;
+    }
+    .app__chat_icon button {
+        padding: 0;
+    }
+    .closeBtn {
+        display: block;
+    }
+    .app__chat_icon img {
+        width: 65px;
+    }
+}
+  
+@media (max-width: 576px){
+    .app__avarter button {
+        margin-right: 3px;
+        padding: 4px;
+    }
+    .post__avatar {
+        margin-right: 10px;
+        width: 30px !important;
+        height: 30px !important;
+    }
 }
